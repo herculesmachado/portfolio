@@ -197,14 +197,6 @@ nav ul a svg{
 
 
 
-
-
-
-
-
-
-
-
 /*desktop*/
 @media (max-width: 1000px) {
     header .container{
@@ -313,4 +305,18 @@ nav ul a svg{
     .about-me .img-container{
         margin: 70px  auto 0;
     }
+}
+
+
+
+/*Scroll de barra lateral*/
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--cor-destaque); 
+    border-radius: 5px;
 }
