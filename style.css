@@ -45,6 +45,12 @@ h3{
     font-weight: 400;
 }
 
+h4{
+    font-size: 20px;
+    color: var(--cor-subtitulo);
+    font-weight: 400;
+}
+
 p{
     font-size: 18px;
     color: var(--cor-titulo-paragrafo);
@@ -179,12 +185,44 @@ nav ul a svg{
     width: 100%;
 }
 
-/*Services*/
+/*Skills*/
 
-.services{
-    height: 90vh;
-    background-color: rebeccapurple;
+.skills{
+    padding: 0 100px;
 }
+
+.card-skills{
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills h2{
+    color: var(--cor-titulo-paragrafo);
+}
+
+.skills h3{
+    font-size: 22px;
+}
+
+
+
+.skills .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.skills-container .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 
@@ -201,6 +239,7 @@ nav ul a svg{
 @media (max-width: 1000px) {
     header .container{
         width: 100%;
+        padding: 0 40px;
     }
 
     header .linha{
@@ -243,6 +282,7 @@ nav ul a svg{
     }
     
     /*Barra de nav*/
+        
     nav img{
         display: none;
     }
@@ -255,16 +295,35 @@ nav ul a svg{
         font-size: 16px;
     }
 
+    /*About me*/
+
+    .about-me{
+        padding: 0 40px;
+    }
+
     .about-me .img-container{
         margin: 70px  auto 0;
     }
+
+    /*Skills*/
+
+    .skills{
+        padding: 0 40px;
+    }
+
+    .skills .skills-container .card-skills{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
 
 
 /*Celular*/
 @media (max-width: 480px){
     header .container{
-        padding: 0 25px;
+        padding: 0 40px;
         margin-top: 70px;
     }
 
@@ -299,11 +358,17 @@ nav ul a svg{
     /*About me*/
 
     .about-me{
-        padding: 0 25px;
+        padding: 0 40px;
     }
 
     .about-me .img-container{
         margin: 70px  auto 0;
+    }
+
+    /*Skills*/
+
+    .skills{
+        padding: 0 40px;
     }
 }
 
