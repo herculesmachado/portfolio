@@ -66,12 +66,25 @@ span{
     color: var(--cor-destaque);
 }
 
+b{
+    color: var(--cor-titulo-paragrafo);
+    font-weight: 400;
+}
+
+button{
+    padding: 8px 32px;
+    background-color: var(--cor-footer);
+    color: var(--cor-titulo-paragrafo);
+    cursor: pointer;
+}
+
 /*Header*/
 
 header{
     height: 90vh;
     display: flex;
     align-items: center;
+    
 }
 
 header .container{
@@ -151,6 +164,8 @@ nav ul a svg{
     display: flex;
     padding: 0 100px;
     align-items: center;
+    background: url(assets/portfolio.bg.png);
+    height: 820px;
 }
 
 .about-me .container h2{
@@ -175,9 +190,8 @@ nav ul a svg{
     height: 100%;
     object-fit: cover;
     border-right: 5px solid var(--cor-destaque);
-
     border-bottom: 5px solid var(--cor-destaque);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .about-me .linha{
@@ -206,8 +220,6 @@ nav ul a svg{
     font-size: 22px;
 }
 
-
-
 .skills .linha{
     margin: 0 auto;
     width: 100%;
@@ -217,6 +229,256 @@ nav ul a svg{
     margin: 0 auto;
     width: 100%;
 }
+
+/*Services*/
+
+.services{
+    padding: 0 100px;
+}
+
+.services h2{
+    color: var(--cor-titulo-paragrafo);
+}
+
+.services h3{
+    font-size: 22px;
+}
+
+.services .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.services .services-container .service-card{
+    background: var(--cor-footer);
+    border-radius: 16px;
+    border-bottom: 5px solid var(--cor-destaque);
+    border-top: 5px solid var(--cor-destaque);
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    max-width: 360px;
+    box-shadow: 1px 1px 15px 0px black;
+}
+
+.service-card svg{
+    width: 60px;
+    height: 60px;
+    color: var(--cor-destaque);
+}
+
+.services .services-container .service-card h2{
+    color: var(--cor-titulo-paragrafo);
+}
+
+.services .services-container .service-card img{
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.service-card + .service-card{
+    margin-left: 10px;
+}
+
+/*Portfólio*/
+
+.portfolio{
+    padding: 0 100px;
+    /*background: url(assets/portfolio.bg.png);
+    height: 830px;*/
+}
+
+.portfolio .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio .portfolio-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    margin-top: 128;
+}
+
+.portfolio h2{
+    color: var(--cor-titulo-paragrafo);
+}
+
+.portfolio .portfolio-container .portfolio-card{
+    max-width: 360px;
+    background: radial-gradient(100% 100% at 0% 0%, var(--cor-destaque) 0%, var(--cor-footer) 100%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--cor-destaque);
+    border-right: 5px solid  var(--cor-destaque) ;
+    border-radius: 16px;
+    padding: 50px 25px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container{
+    margin: 0 25px 50px;
+    position: relative;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container img{
+    width: 100%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li{
+    color: var(--cor-titulo-paragrafo);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 16px;
+    padding: 3px 15px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container{
+    margin-bottom: 20px;
+}
+
+.portfolio-card .language-container ul li + li {
+    margin-left: 10px;
+}
+
+
+
+.portfolio-card + .portfolio-card{
+    margin-left: 10px;
+    
+}
+
+/*Portfólio*/
+
+.curriculum{
+    padding: 0 100px;
+    background: url(assets/portfolio.bg.png);
+    height: 830px;
+}
+
+.curriculum h2{
+    color: var(--cor-titulo-paragrafo);
+}
+
+.curriculum-img{
+    width: 50%;
+}
+
+.curriculum .container{
+    display: flex;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+.curriculum .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+
+.curriculum .container .curriculum-info{
+    display: grid;
+    grid-template-columns: 150px auto;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.curriculum .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.linha-curriculum .linha, .linha-aboutme .linha{
+    margin-top: 0;
+}
+
+.secondary-button{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor-destaque);
+    padding: 16px 32px;
+
+}
+
+.curriculum .container .secondary-button svg{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    color: var(--cor-destaque);
+}
+
+/*Contato*/
+
+.contact{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.contact h2{
+    text-align: left;
+    color: var(--cor-titulo-paragrafo);
+}
+
+.contact .linha{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact p{
+    margin: 50px auto;
+    font-size: 24px;
+    width: 700px;
+    color: var(--cor-titulo-paragrafo);
+}
+
+.contact .button-contact{
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--cor-destaque);
+    padding: 12px 32px;
+}
+
+
+.contact .social-media{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact .social-media svg{
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    color: var(--cor-destaque);
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    margin: 50px auto 30px;
+}
+
 
 
 
@@ -258,10 +520,6 @@ nav ul a svg{
 
     /*About me*/
 
-    .about-me{
-        flex-direction: column;
-    }
-
     .about-me .container, .about-me .img-container{
         width: 100%;
     }
@@ -269,6 +527,62 @@ nav ul a svg{
     .about-me .img-container{
         margin: 70px  auto 0;
     }
+
+    /*Services*/
+
+    .services .services-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card + .service-card{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    /*Portfólio*/
+
+    .portfolio{
+        padding: 0 40px;
+        height: 100%;
+    }
+
+    .portfolio .portfolio-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-card + .portfolio-card{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /*currículo*/
+    .curriculum{
+        padding: 0 40px;
+    }
+
+    .curriculum-img{
+        width: 50%;
+    }
+
+    .curriculum .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curriculum .container .content{
+        margin-top: 20px;
+    }
+
+    .linha-curriculum .linha{
+        margin-top: 320px;
+    }
+
+
 }
 
 /*Tablete*/
@@ -299,11 +613,17 @@ nav ul a svg{
 
     .about-me{
         padding: 0 40px;
+        flex-direction: column;
     }
 
     .about-me .img-container{
         margin: 70px  auto 0;
     }
+
+    .linha-aboutme .linha{
+        margin-top: 200px;
+    }
+
 
     /*Skills*/
 
@@ -315,6 +635,30 @@ nav ul a svg{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    /*Services*/
+
+    .services{
+        padding: 0 40px;
+    }
+
+    /*Currículo*/
+    .curriculum-img{
+        width: 75%;
+    }
+
+    .linha-curriculum .linha{
+        margin-top: 400px;
+    }
+
+    /*Contato*/
+    .contact{
+        padding: 0 40px;
+    }
+
+    .contact p{
+        width: 550px;
     }
 
 }
@@ -365,11 +709,46 @@ nav ul a svg{
         margin: 70px  auto 0;
     }
 
+    .linha-aboutme .linha{
+        margin-top: 100px;
+    }
+
     /*Skills*/
 
     .skills{
         padding: 0 40px;
     }
+
+    /*Portfólio*/
+    .portfolio {
+        padding: 0 40px;
+    }
+
+    /*Currículo*/
+
+    .curriculum .container .curriculum-info{
+        grid-template-columns: 100px auto;
+        margin-bottom: 75px;
+    }
+
+
+    .linha-curriculum .linha{
+        margin-top: 200px;
+    }
+
+    /*Contato*/
+    .contact{
+        padding: 0 40px;
+    }
+
+    .contact p{
+        width: 350px;
+    }
+
+    footer{
+        margin: 50px auto 120px;
+    }
+
 }
 
 
