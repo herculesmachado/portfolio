@@ -356,6 +356,11 @@ nav ul a svg{
     margin-left: 10px;
 }
 
+.portfolio-card img{
+    border-radius: 5px;
+    border: 3px solid var(--cor-titulo-paragrafo);
+}
+
 
 
 .portfolio-card + .portfolio-card{
