@@ -422,7 +422,11 @@ nav ul a svg{
     border-radius: 5px;
     border: 1px solid var(--cor-destaque);
     padding: 16px 32px;
+}
 
+.secondary-button a{
+    color: var(--cor-destaque);
+    text-decoration: none;
 }
 
 .curriculum .container .secondary-button svg{
