@@ -10,7 +10,7 @@ interface IntroductionProps {
 export default function Introduction(props: IntroductionProps) {
     return (
         <IntroductionContainer>
-            <Title>{props.title}</Title>
+            <Title>{props.title}👋🏼</Title>
             <Subtitle>{props.subtitleFront}<Marked>Hercules Machado</Marked>{props.subtitleBack}</Subtitle>
         </IntroductionContainer>
     )
