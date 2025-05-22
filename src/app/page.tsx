@@ -1,11 +1,11 @@
 "use client";
 import About from "@/components/about";
 import Introduction from "@/components/introduction";
-import { PageContainer } from "@/styles/page.style";
+// import { PageContainer } from "@/styles/page.style";
 
 export default function Home() {
   return (
-    <PageContainer>
+    <>
       <Introduction
         title="Olá!!"
         subtitleFront="Sou "
@@ -25,6 +25,6 @@ export default function Home() {
           
         />
       </section>
-    </PageContainer>
+    </>
   );
 }

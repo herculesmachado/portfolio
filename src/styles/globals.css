@@ -10,7 +10,8 @@
 
 html,
 body {
-  max-width: 100vw;
+  max-width: 1280px;
+  margin: auto;
   /* overflow-x: hidden; */
   font-family: 'Nothing You Could Do', cursive;
   background-color: rgb(255, 255, 255);

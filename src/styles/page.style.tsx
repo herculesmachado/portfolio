@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const PageContainer = styled.div`
-  padding: 0 15rem;
+// export const PageContainer = styled.div`
+//   padding: 0 15rem;
 
-  @media (max-width: 480px) {
-    padding: 0 2rem;
-  }
-`;
+//   @media (max-width: 480px) {
+//     padding: 0 2rem;
+//   }
+// `;
 
 export const IntroductionContainer = styled.div`
   display: flex;
