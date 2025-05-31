@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/about";
 import Introduction from "@/components/introduction";
+import Skills from "@/components/skills";
 import { useEffect, useState } from "react";
 // import { PageContainer } from "@/styles/page.style";
 
@@ -43,6 +44,8 @@ export default function Home() {
 
       <section>
         <About/>
+
+        <Skills/>
       </section>
     </div>
   );

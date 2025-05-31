@@ -14,7 +14,7 @@ export const IntroductionContainer = styled.div`
 
 export const AboutContainer = styled.div`
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
   margin-bottom: 10rem;
 
   @media (max-width: 480px) {
@@ -48,10 +48,10 @@ export const Subtitle = styled.h2`
 export const Subtitlepage = styled.h3`
   width: -webkit-fill-available;
   font-size: 1.5rem;
-  margin-bottom: 2rem;
   color: #0099ff;
   
   @media (max-width: 480px) {
+    margin-bottom: 2rem;
     font-size: 2rem;
   }
 `;
