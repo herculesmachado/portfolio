@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Nothing_You_Could_Do } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "../styles/globals.css";
 
-const nothingYouCouldDo = Nothing_You_Could_Do({
-  weight: '400',
-  style: 'normal',
+const roboto = Roboto({
+  weight: '300',
   subsets: ['latin'],
 })
 
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="PT-BR">
-      <body className={`${nothingYouCouldDo.className}`}>
+      <body className={`${roboto.className}`}>
         {children}
       </body>
     </html>
