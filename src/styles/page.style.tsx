@@ -10,6 +10,8 @@ export const IntroductionContainer = styled.div`
   @media (max-width: 480px) {
     height: 70vh;
   }
+
+
 `;
 
 export const AboutContainer = styled.div`
@@ -19,6 +21,11 @@ export const AboutContainer = styled.div`
 
   @media (max-width: 480px) {
     display: block;
+  }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
   }
 `;
 
@@ -69,3 +76,18 @@ export const Paragrafo = styled.p`
     font-size: 1rem;
   }
 `;
+
+export const Button = styled.button`
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 1rem 0 0;
+
+    &:hover {
+        background-color: #007acc;
+    }
+`

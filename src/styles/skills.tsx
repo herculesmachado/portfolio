@@ -9,6 +9,11 @@ export const SkillsContainer = styled.div`
   @media (max-width: 480px) {
     display: block;
   }
+
+  @media (min-width: 767px) and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const SkillsList = styled.h3`
