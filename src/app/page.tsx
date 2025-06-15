@@ -3,6 +3,7 @@ import About from "@/components/about";
 import Experience from "@/components/experience";
 import Introduction from "@/components/introduction";
 import Skills from "@/components/skills";
+import { Navigation } from "@/styles/page.style";
 import { useEffect, useState } from "react";
 // import { PageContainer } from "@/styles/page.style";
 
@@ -23,19 +24,23 @@ export default function Home() {
 
   return (
     <div>
-      <nav>
-        <div className="nav-container">
-          <button
-            className={`dark-mode${darkMode ? " active" : ""}`}
-            onClick={handleDarkMode}
-            aria-label="Alternar modo escuro"
-          >
-            <span className="icon sun">☀️</span>
-            <span className="icon moon">🌙</span>
-            <span className="toggle-thumb"></span>
-          </button>
-        </div>
-      </nav>
+      <Navigation>
+        <nav>
+          <div className="nav-container">
+            <button
+              className={`dark-mode${darkMode ? " active" : ""}`}
+              onClick={handleDarkMode}
+              aria-label="Alternar modo escuro"
+            >
+              <span className="icon sun">☀️</span>
+              <span className="icon moon">🌙</span>
+              <span className="toggle-thumb"></span>
+            </button>
+          </div>
+        </nav>
+
+        {/* <Button>Download CV</Button> */}
+      </Navigation>
 
       <Introduction
         title="Olá!!"

@@ -1,14 +1,7 @@
 import { ExperienceCompany, ExperienceContainer, ExperienceDate, ExperienceDescription, ExperienceItem, ExperienceTitle } from "@/styles/experience";
-import { Button, Subtitlepage } from "@/styles/page.style";
+import { Marked, Subtitlepage } from "@/styles/page.style";
 
 export default function Experience() {
-    const url = `https://api.github.com/users/herculesmachado/repos`
-
-    fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data.name);
-        })
 
 
     return (
@@ -17,26 +10,21 @@ export default function Experience() {
 
             <ExperienceContainer>
                 <ExperienceItem>
-                    <ExperienceTitle>Desenvolvedor Front-End</ExperienceTitle>
-                    <ExperienceCompany>Empresa XYZ</ExperienceCompany>
-                    <ExperienceDate>Jan 2020 - Presente</ExperienceDate>
+                    <ExperienceTitle>Análista de Suporte Interno 1</ExperienceTitle>
+                    <ExperienceCompany>Zeus Sistemas de Gestão</ExperienceCompany>
+                    <ExperienceDate>Mai 2024 - Atualmente</ExperienceDate>
                     <ExperienceDescription>
-                        Desenvolvimento de aplicações web utilizando React, Next.js e TypeScript.
+                        Atuo como analista de suporte interno, auxiliando na melhoria do sistema e na experiência do usuário. Trabalho com consultas <Marked>PostgreSQL</Marked>
                     </ExperienceDescription>
-                    <Button>GitHub</Button>
-                    <Button>Site</Button>
                 </ExperienceItem>
 
                 <ExperienceItem>
-                    <ExperienceTitle>Desenvolvedor Full-Stack</ExperienceTitle>
-                    <ExperienceCompany>Empresa ABC</ExperienceCompany>
-                    <ExperienceDate>Jan 2018 - Dez 2019</ExperienceDate>
+                    <ExperienceTitle>Desenvolvedor Front-end Voluntário</ExperienceTitle>
+                    <ExperienceCompany>Sou Junior</ExperienceCompany>
+                    <ExperienceDate>Jun 2023 - Ago 2023</ExperienceDate>
                     <ExperienceDescription>
-                        Desenvolvimento de aplicações web com foco em performance e usabilidade.
+                        Participei como desenvolvedor front-end voluntário, contribuindo para projetos de código aberto e aprimorando minhas habilidades em desenvolvimento web com as tecnologias <Marked>JavaScript, TypeScript, Tailwind CSS, Styled-Components, ReactJS, Yup</Marked>, entre outras techs.
                     </ExperienceDescription>
-
-                    <Button>GitHub</Button>
-                    <Button>Site</Button>
                 </ExperienceItem>
             </ExperienceContainer>
         </>

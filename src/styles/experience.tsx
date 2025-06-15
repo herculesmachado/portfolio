@@ -18,7 +18,7 @@ export const ExperienceItem = styled.div`
 `;
 
 export const ExperienceTitle = styled.h4`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   text-decoration: underline #0099ff 1.5px;
 `;

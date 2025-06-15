@@ -10,9 +10,12 @@ export const IntroductionContainer = styled.div`
   @media (max-width: 480px) {
     height: 70vh;
   }
-
-
 `;
+
+export const Navigation = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
 
 export const AboutContainer = styled.div`
   display: flex;
